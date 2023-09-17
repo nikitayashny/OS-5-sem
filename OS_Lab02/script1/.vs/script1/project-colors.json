@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "e2b82b8c-446d-4691-9636-7c665acc5597": {
+      "ProjectGuid": "e2b82b8c-446d-4691-9636-7c665acc5597",
+      "DisplayName": "script1",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
