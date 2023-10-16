@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "920fc20a-cd17-4acf-8804-27b00dd75c0f": {
+      "ProjectGuid": "920fc20a-cd17-4acf-8804-27b00dd75c0f",
+      "DisplayName": "OS03_01",
+      "ColorIndex": 0
+    },
+    "760655f4-02f7-44d8-9e19-f98d4bdef60d": {
+      "ProjectGuid": "760655f4-02f7-44d8-9e19-f98d4bdef60d",
+      "DisplayName": "OS03_02",
+      "ColorIndex": 1
+    },
+    "9d6bba93-e417-4fcb-b09b-f7342767a529": {
+      "ProjectGuid": "9d6bba93-e417-4fcb-b09b-f7342767a529",
+      "DisplayName": "OS03_02_1",
+      "ColorIndex": 2
+    },
+    "0d42728a-ccb5-485c-9b28-b9574ef3be2d": {
+      "ProjectGuid": "0d42728a-ccb5-485c-9b28-b9574ef3be2d",
+      "DisplayName": "OS03_02_2",
+      "ColorIndex": 3
+    },
+    "73d57d54-a6cf-4a17-92ac-a47eff8e0a15": {
+      "ProjectGuid": "73d57d54-a6cf-4a17-92ac-a47eff8e0a15",
+      "DisplayName": "OS03_03",
+      "ColorIndex": 4
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 5
+}
