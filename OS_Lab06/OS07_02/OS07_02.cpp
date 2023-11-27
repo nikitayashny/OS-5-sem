@@ -4,17 +4,6 @@
 using namespace std;
 CRITICAL_SECTION critical_section;
 
-HANDLE createThread(LPTHREAD_START_ROUTINE func, char* thread_name)
-{
-	DWORD thread_id = NULL;
-	HANDLE thread = CreateThread(NULL, 0, func, thread_name, 0, &thread_id);
-
-	if (thread == NULL) 
-		throw "[ERROR] CreateThread";
-
-	return thread;
-}
-
 void WINAPI loop(char* displayed_name) 
 {
 	int pid = GetCurrentProcessId();
@@ -43,8 +32,8 @@ int main()
 
 	HANDLE threads[size];
 
-	threads[0] = createThread((LPTHREAD_START_ROUTINE)loop, (char*)"A");
-	threads[1] = createThread((LPTHREAD_START_ROUTINE)loop, (char*)"B");
+	threads[0] = CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)loop, (char*)"A", 0, NULL);
+	threads[1] = CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)loop, (char*)"B", 0, NULL);
 
 	InitializeCriticalSection(&critical_section);
 
@@ -69,4 +58,3 @@ int main()
 	DeleteCriticalSection(&critical_section);
 	return 0;
 }
-

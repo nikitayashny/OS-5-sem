@@ -49,7 +49,7 @@ int main()
 		CloseHandle(processes[i]);
 
 	CloseHandle(mutex);
-	cout << '\n';
+	cout << endl;
 	system("pause");
 	return 0;
 }

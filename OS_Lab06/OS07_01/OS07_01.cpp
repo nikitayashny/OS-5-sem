@@ -6,37 +6,25 @@ using namespace std;
 
 int check;
 
-//HANDLE createThread(LPTHREAD_START_ROUTINE func, char* thread_name);
 void EnterCriticalSectionAssem();
 void LeaveCriticalSectionAssem();
 void WINAPI loop(char* displayed_name);
-
 
 int main()
 {
 	const int size = 2;
 	HANDLE threads[size];
 
-	//threads[0] = createThread((LPTHREAD_START_ROUTINE)loop, (char*)"A");
-	//threads[1] = createThread((LPTHREAD_START_ROUTINE)loop, (char*)"B");
 	threads[0] = CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)loop, (char*)"A", 0, NULL);
 	threads[1] = CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)loop, (char*)"B", 0, NULL);
 
 	WaitForMultipleObjects(size, threads, TRUE, INFINITE);
+
 	for (int i = 0; i < size; i++)
 		CloseHandle(threads[i]);
 
 	return 0;
 }
-
-//HANDLE createThread(LPTHREAD_START_ROUTINE func, char* thread_name)
-//{
-//	DWORD thread_id = NULL;
-//	HANDLE thread = CreateThread(NULL, 0, func, thread_name, 0, &thread_id);
-//	if (thread == NULL)
-//		throw "[ERROR] CreateThread";
-//	return thread;
-//}
 
 void EnterCriticalSectionAssem()
 {
