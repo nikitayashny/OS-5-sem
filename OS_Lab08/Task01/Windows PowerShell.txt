@@ -1,0 +1,103 @@
+Windows PowerShell
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Попробуйте новую кроссплатформенную оболочку PowerShell (https://aka.ms/pscore6)
+
+PS C:\Users\User\Desktop\ОС\OS_Lab08\Task01> Get-WmiObject -Class "Win32_PhysicalMemory"
+
+
+__GENUS              : 2
+__CLASS              : Win32_PhysicalMemory
+__SUPERCLASS         : CIM_PhysicalMemory
+__DYNASTY            : CIM_ManagedSystemElement
+__RELPATH            : Win32_PhysicalMemory.Tag="Physical Memory 0"
+__PROPERTY_COUNT     : 36
+__DERIVATION         : {CIM_PhysicalMemory, CIM_Chip, CIM_PhysicalComponent, CIM_PhysicalElement...}
+__SERVER             : NIKITA
+__NAMESPACE          : root\cimv2
+__PATH               : \\NIKITA\root\cimv2:Win32_PhysicalMemory.Tag="Physical Memory 0"
+Attributes           : 1
+BankLabel            : BANK 0
+Capacity             : 8589934592
+Caption              : Физическая память
+ConfiguredClockSpeed : 3200
+ConfiguredVoltage    : 1200
+CreationClassName    : Win32_PhysicalMemory
+DataWidth            : 64
+Description          : Физическая память
+DeviceLocator        : Controller0-ChannelA
+FormFactor           : 12
+HotSwappable         :
+InstallDate          :
+InterleaveDataDepth  : 1
+InterleavePosition   : 1
+Manufacturer         : 0x0000
+MaxVoltage           : 1200
+MemoryType           : 0
+MinVoltage           : 1200
+Model                :
+Name                 : Физическая память
+OtherIdentifyingInfo :
+PartNumber           :
+PositionInRow        :
+PoweredOn            :
+Removable            :
+Replaceable          :
+SerialNumber         : 00000000
+SKU                  :
+SMBIOSMemoryType     : 26
+Speed                : 3200
+Status               :
+Tag                  : Physical Memory 0
+TotalWidth           : 64
+TypeDetail           : 128
+Version              :
+PSComputerName       : NIKITA
+
+__GENUS              : 2
+__CLASS              : Win32_PhysicalMemory
+__SUPERCLASS         : CIM_PhysicalMemory
+__DYNASTY            : CIM_ManagedSystemElement
+__RELPATH            : Win32_PhysicalMemory.Tag="Physical Memory 4"
+__PROPERTY_COUNT     : 36
+__DERIVATION         : {CIM_PhysicalMemory, CIM_Chip, CIM_PhysicalComponent, CIM_PhysicalElement...}
+__SERVER             : NIKITA
+__NAMESPACE          : root\cimv2
+__PATH               : \\NIKITA\root\cimv2:Win32_PhysicalMemory.Tag="Physical Memory 4"
+Attributes           : 1
+BankLabel            : BANK 0
+Capacity             : 8589934592
+Caption              : Физическая память
+ConfiguredClockSpeed : 3200
+ConfiguredVoltage    : 1200
+CreationClassName    : Win32_PhysicalMemory
+DataWidth            : 64
+Description          : Физическая память
+DeviceLocator        : Controller1-ChannelA
+FormFactor           : 12
+HotSwappable         :
+InstallDate          :
+InterleaveDataDepth  : 1
+InterleavePosition   : 2
+Manufacturer         : 0x0000
+MaxVoltage           : 1200
+MemoryType           : 0
+MinVoltage           : 1200
+Model                :
+Name                 : Физическая память
+OtherIdentifyingInfo :
+PartNumber           :
+PositionInRow        :
+PoweredOn            :
+Removable            :
+Replaceable          :
+SerialNumber         : 00000000
+SKU                  :
+SMBIOSMemoryType     : 26
+Speed                : 3200
+Status               :
+Tag                  : Physical Memory 4
+TotalWidth           : 64
+TypeDetail           : 128
+Version              :
+PSComputerName       : NIKITA
